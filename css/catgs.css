@@ -5,7 +5,10 @@
     font-family: "Rubik", sans-serif;
     text-decoration: none;
 }
-
+nav{
+  position: sticky;
+  top: 0;
+}
 .catgs{
     width: 100%;
     display: flex;
