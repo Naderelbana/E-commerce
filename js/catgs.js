@@ -50,3 +50,15 @@ async function addToCart(prId){
 }
 
 window.addToCart = addToCart;
+
+
+let menu = document.querySelector('.navbar .menu .categories')
+let addressMenu = document.querySelector('.navbar .Address-Menu')
+
+menu.addEventListener('click', ()=>{
+  if(addressMenu.classList.contains('dis-menu')){
+    addressMenu.classList.replace('dis-menu','d-none')
+  }else{
+    addressMenu.classList.add('dis-menu')
+  }
+})

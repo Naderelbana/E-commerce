@@ -22,7 +22,7 @@ body{
     flex-wrap: wrap;
 }
 
- .item {
+.catgs .item {
     width: 25%;
     margin-top: 16px;
     display: flex;
@@ -34,13 +34,13 @@ body{
     text-align: center;
     gap: 10px;
 }
-.item:hover {
+.catgs .item:hover {
     box-shadow: 0 0 14px 8px #0000001b;
 }
-.item .item-img-con img{
+.catgs .item .item-img-con img{
     width: 100%;
 }
-.item .item-text-con{
+.catgs .item .item-text-con{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,26 +49,26 @@ body{
     padding: 5px 8px;
     width: 100%;
 }
-.item .item-img-con{
+.catgs .item .item-img-con{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 12px 24px;
 }
-.item .item-text-con :nth-child(2) {
+.catgs .item .item-text-con :nth-child(2) {
     color: gray;
   }
-.item a {
+  .catgs .item a {
     text-align: center;
   }
-.item h6 {
+  .catgs .item h6 {
     color: black;
     font-size: 16px;
   }
-.item h6:hover {
+  .catgs .item h6:hover {
     color: #0099cc;
   }
-.item button {
+  .catgs .item button {
     width: 100%;
     padding: 12px 20px;
     color: #fff;
@@ -80,13 +80,13 @@ body{
     margin-top: 5px;
     transition: all 0.25s;
   }
-.item button:hover {
+  .catgs .item button:hover {
     color: rgb(186, 183, 183);
   }
-.item:hover button {
+  .catgs .item:hover button {
     background-color: #0099cc;
   }
-.item::after {
+  .catgs .item::after {
     content: "-25%";
     width: 35px;
     aspect-ratio: 1;
@@ -100,4 +100,44 @@ body{
     color: #fff;
     border-radius: 50%;
     background-color: #ff3333;
+  }
+  @media screen and (max-width: 1200px) and (min-width: 992px) {
+    .catgs .container {
+      padding: 0 5%;
+    }
+  }
+  @media screen and (max-width: 992px) and (min-width: 769px) {
+    .catgs .container {
+      padding: 0 5%;
+      justify-content: center;
+      align-items: center;
+    }
+    .catgs .item {
+      width: 33%;
+    }
+  }
+  @media screen and (max-width: 769px) and (min-width: 576px) {
+    .catgs .container {
+      padding: 0 5%;
+      justify-content: center;
+      align-items: center;
+    }
+    .catgs .item {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .catgs .container {
+      padding: 0 5%;
+      justify-content: center;
+      align-items: center;
+    }
+    .catgs .item {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 465px) {
+    .catgs .item {
+      width: 100%;
+    }
   }
