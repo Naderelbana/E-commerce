@@ -789,6 +789,9 @@ main .features .container .feature {
   .super-deals .carousel {
     width: 100%;
   }
+  .super-deals .cards .item {
+    width: 100%;
+  }
 }
 
 /* End Super Deals Section */
@@ -1199,6 +1202,9 @@ main .features .container .feature {
 }
 @media screen and (max-width: 465px) {
   .newArrival .carousel {
+    width: 100%;
+  }
+  .newArrival .cards .item {
     width: 100%;
   }
 }
